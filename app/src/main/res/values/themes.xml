@@ -1,0 +1,10 @@
+<resources>
+    <style name="Base.Theme.WBPOApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="primaryBackground">@color/primary_light_background</item>
+        <item name="secondaryBackground">@color/secondary_light_background</item>
+        <item name="textColor">@color/dark_text</item>
+
+    </style>
+
+    <style name="Theme.WBPOApp" parent="Base.Theme.WBPOApp" />
+</resources>

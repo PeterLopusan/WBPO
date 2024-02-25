@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="25dp"
+    android:background="@drawable/rounded_shape"
+    android:backgroundTint="?attr/secondaryBackground"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/img_profile_picture"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_follow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/person_icon" />
+
+    <LinearLayout
+        android:id="@+id/layout_user_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/btn_follow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_profile_picture">
+
+        <TextView
+            android:id="@+id/txt_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/textColor"
+            android:textSize="16sp"
+            tools:text="Id: 4" />
+
+        <TextView
+            android:id="@+id/txt_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/textColor"
+            android:textSize="16sp"
+            tools:text="Meno: George" />
+
+        <TextView
+            android:id="@+id/txt_lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/textColor"
+            android:textSize="16sp"
+            tools:text="Priezvisko: Bluth" />
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/textColor"
+            android:textSize="16sp"
+            tools:text="Email: email@gmail.com" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_follow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:background="@drawable/rounded_shape"
+        android:elevation="2dp"
+        android:textAllCaps="false"
+        android:textColor="?attr/textColor"
+        android:textSize="14sp"
+        app:backgroundTint="?attr/primaryBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="@string/user_list_fragment_email_follow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

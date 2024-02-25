@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WBPO app</string>
+
+
+    <!-- Registration fragment -->
+    <string name="registration_fragment_email">Email</string>
+    <string name="registration_fragment_password">Password</string>
+    <string name="registration_fragment_register_button">Register</string>
+    <string name="registration_fragment_fill_all_info">Fill in all required information</string>
+    <string name="registration_fragment_register_user_success">User registration was successful</string>
+    <string name="registration_fragment_register_user_unsuccess">User registration failed</string>
+
+
+    <!-- User list fragment -->
+    <string name="user_list_fragment_id">ID: %1$d</string>
+    <string name="user_list_fragment_firstname">Firstname: %1$s</string>
+    <string name="user_list_fragment_lastname">Lastname: %1$s</string>
+    <string name="user_list_fragment_email">Email: %1$s</string>
+    <string name="user_list_fragment_email_unsuccessfully_loading">Load users failed</string>
+    <string name="user_list_fragment_email_follow">Follow</string>
+    <string name="user_list_fragment_email_unfollow">Unfollow</string>
+
+</resources>
